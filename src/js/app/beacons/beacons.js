@@ -72,6 +72,13 @@ angular.module(appName)
                 );
                 $scope.beaconDescription = '';
 
+		$scope.id = 'Beacon id';
+		$scope.name = 'Name of the Beacon',
+  		$scope.url = 'url',
+  		$scope.version = 'v1',
+  		$scope.provider = 'provider',
+
+
                 $http.get(api + '/?limit=0')
                     .then(
                         function onBeaconInfoSuccess(result) {
